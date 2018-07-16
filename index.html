@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>淘宝美食汇</title>
+		<!--设置网页关键字方便搜索引擎-->
+		<meta name="keywords" content="美食,菜谱">
+		<!--设置网页描述,免费的广告位-->
+		<meta name="description" content="美食天下,欢迎您的加入">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			ul {
+				list-style: none;
+			}
+			
+			h3,p{
+				text-align: center;
+			}
+			h3{
+				line-height: 60px;
+			}
+			#wrap {
+				width: 1200px;
+				height: 360px;
+				margin: 100px auto;
+				/*第一个是代表上下,第二个是代表左右*/
+				/*background-color:#368; 这么写快,别的写法多加载东西*/
+				box-shadow: 0 0 9px #222;
+				/*盒子阴影 第一个参数控制左右的阴影 第二个上下的影子  第三个参数渲染范围 颜色*/
+			}
+			
+			#wrap ul {
+				display: flex;
+				/*开启弹性盒模型*/
+				flex-wrap: wrap;
+				/*强制换行*/
+				justify-content: space-around;
+				/*主轴(默认横向)方向内部元素对齐方式:均分*/
+				align-items: center;
+				/*辅轴(默认纵向)方向内部元素对齐方式:居中*/
+				width: 100%;
+				height: 100%;
+			}
+			
+			#wrap ul li {
+				width: 360px;
+				height: 139px;
+				box-shadow: 0 0 3px #222;
+				/*边框线 尺寸 模式 颜色*/
+				border:6px solid #fff;
+				/*float: left;
+				
+				margin: 19px;
+				background-color:#368;
+				*/
+			}
+			
+			#wrap ul li img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			#wrap .title {
+				width: 100%;
+				height: 100%;
+				background-color:rgba(255,255,255,.5);
+				/*形变 位移 缩放(倍数)*/
+				transform: translateY(-143px) scale(0);
+				transition: 0.5s;
+			}
+			#wrap ul li:hover .title{  /*鼠标悬停伪类选择器*/
+				transform: translateY(-143px) scale(1);
+			}
+			/*a.b
+			ul li 选择ul 里面的li
+			p,h3  一起
+			*/
+		</style>
+	</head>
+
+	<body>
+		<div id='wrap'>
+			<ul>
+				<li>
+					<img src="http://img5.cache.hxsd.com/movie/2015/04/01/690126_1427881297_23.jpg" width="644" height="455" alt="图片关键词" />
+					<div class="title">
+						<h3>口水印品</h3> <!--标签语义化标题必须用H   h1只能用一次要不会降低网站排名  主推荐用h3 h4是辅页推荐-->
+						<h4>口水印品</h4>
+					</div>
+				</li>
+				<li>
+					<img src="http://img5.cache.hxsd.com/movie/2015/04/01/690126_1427881297_23.jpg" width="644" height="455" alt="图片关键词" />
+					<div class="title">
+						<h3>口水印品</h3> <!--标签语义化标题必须用H   h1只能用一次要不会降低网站排名  主推荐用h3 h4是辅页推荐-->
+						<h4>口水印品</h4>
+					</div>
+				</li>
+				<li>
+					<img src="http://img5.cache.hxsd.com/movie/2015/04/01/690126_1427881297_23.jpg" width="644" height="455" alt="图片关键词" />
+					<div class="title">
+						<h3>口水印品</h3> <!--标签语义化标题必须用H   h1只能用一次要不会降低网站排名  主推荐用h3 h4是辅页推荐-->
+						<h4>口水印品</h4>
+					</div>
+				</li>
+				<li>
+					<img src="http://img5.cache.hxsd.com/movie/2015/04/01/690126_1427881297_23.jpg" width="644" height="455" alt="图片关键词" />
+					<div class="title">
+						<h3>口水印品</h3> <!--标签语义化标题必须用H   h1只能用一次要不会降低网站排名  主推荐用h3 h4是辅页推荐-->
+						<h4>口水印品</h4>
+					</div>
+				</li>
+				<li>
+					<img src="http://img5.cache.hxsd.com/movie/2015/04/01/690126_1427881297_23.jpg" width="644" height="455" alt="图片关键词" />
+					<div class="title">
+						<h3>口水印品</h3> <!--标签语义化标题必须用H   h1只能用一次要不会降低网站排名  主推荐用h3 h4是辅页推荐-->
+						<h4>口水印品</h4>
+					</div>
+				</li>
+				<li>
+					<img src="http://img5.cache.hxsd.com/movie/2015/04/01/690126_1427881297_23.jpg" width="644" height="455" alt="图片关键词" />
+					<div class="title">
+						<h3>口水印品</h3> <!--标签语义化标题必须用H   h1只能用一次要不会降低网站排名  主推荐用h3 h4是辅页推荐-->
+						<h4>口水印品</h4>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class='box'></div>
+	</body>
+
+</html>
